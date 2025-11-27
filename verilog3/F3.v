@@ -4,5 +4,5 @@
 
 module top(input [8:1] GP, input GP9, input GP18, output [8:1] LED)
     //
-    
+
 endmodule

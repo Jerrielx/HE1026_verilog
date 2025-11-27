@@ -1,0 +1,197 @@
+set_io LED_R 41
+
+set_io LED_G 40
+
+set_io LED_B 39
+
+set_io LED2 2
+
+set_io LED3 3
+
+set_io reset 4
+
+set_io BUS8[0] 37
+
+set_io BUS8[1] 38
+
+set_io BUS8[2] 42
+
+set_io BUS8[3] 43
+
+set_io BUS8[4] 44
+
+set_io BUS8[5] 45
+
+set_io BUS8[6] 46
+
+set_io BUS8[7] 47
+
+set_io MUX3[0] 9
+
+set_io MUX3[1] 10
+
+set_io MUX3[2] 11
+
+set_io P4 4
+
+set_io P6 6
+
+set_io P9 9
+
+set_io P10 10
+
+set_io P11 11
+
+set_io P12 12
+
+set_io P13 13
+
+set_io P18 18
+
+set_io P19 19
+
+set_io P20 20
+
+set_io P21 21
+
+set_io P23 23
+
+set_io P25 25
+
+set_io P37 37
+
+set_io P38 38
+
+set_io P42 42
+
+set_io P43 43
+
+set_io P44 44
+
+set_io P45 45
+
+set_io P46 46
+
+set_io P47 47
+
+set_io P48 48
+
+set_io SPI_SS 16
+
+set_io SPI_SCK 15
+
+set_io SPI_MOSI 17
+
+set_io SPI_MISO 14
+
+set_io LED[0] 4
+
+set_io LED[1] 3
+
+set_io LED[2] 2
+
+set_io LED[3] 48
+
+set_io LED[4] 47
+
+set_io LED[5] 46
+
+set_io LED[6] 45
+
+set_io LED[7] 44
+
+set_io GP1 18
+
+set_io GP2 19
+
+set_io GP3 20
+
+set_io GP4 21
+
+set_io GP5 23
+
+set_io GP6 25
+
+set_io GP7 26
+
+set_io GP8 27
+
+set_io GP9 28
+
+set_io GP10 31
+
+set_io GP11 32
+
+set_io GP12 34
+
+set_io GP13 35
+
+set_io GP14 36
+
+set_io GP15 37
+
+set_io GP16 38
+
+set_io GP17 42
+
+set_io GP18 43
+
+set_io GP19 6
+
+set_io GP20 9
+
+set_io GP21 10
+
+set_io GP22 11
+
+set_io GP23 12
+
+set_io GP24 13
+
+set_io GP[1] 18
+
+set_io GP[2] 19
+
+set_io GP[3] 20
+
+set_io GP[4] 21
+
+set_io GP[5] 23
+
+set_io GP[6] 25
+
+set_io GP[7] 26
+
+set_io GP[8] 27
+
+set_io GP[9] 28
+
+set_io GP[10] 31
+
+set_io GP[11] 32
+
+set_io GP[12] 34
+
+set_io GP[13] 35
+
+set_io GP[14] 36
+
+set_io GP[15] 37
+
+set_io GP[16] 38
+
+set_io GP[17] 42
+
+set_io GP[18] 43
+
+set_io GP[19] 6
+
+set_io GP[20] 9
+
+set_io GP[21] 10
+
+set_io GP[22] 11
+
+set_io GP[23] 12
+
+set_io GP[24] 13
