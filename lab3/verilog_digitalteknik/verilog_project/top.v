@@ -7,21 +7,21 @@
 //              sequential circuit from lab2 trafic signals
 
 
-module top(input GP3, input GP4, output GP7, output GP8, output GP9);
-    wire clock;
-    clock_100hz c(clock);
+module top(input GP1, input GP2, , input GP3, output GP4, output GP5, output GP6);
+    // wire clock;
+    // clock_100hz c(clock);
     traffic_light_fsm traffic_signal(
-        GP3     // input x
-        ,clock  // clock
-        ,GP4    // reset
-        ,GP7    // red
-        ,GP8    // yellow
-        ,GP9    // green
+         GP1    // reset(NCLR)
+        ,GP2    // x
+        ,GP3    // clock
+        ,GP4    // red
+        ,GP5    // yellow
+        ,GP6    // green
     );
 endmodule
 
 
-module traffic_light_fsm(input x, input clock, input reset,
+module traffic_light_fsm(input reset, input x, input clock,
             output reg r, output reg y, output reg g);
     
     parameter green = 0, tored = 1, red = 3, fred = 2;
