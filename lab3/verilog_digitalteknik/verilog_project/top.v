@@ -5,24 +5,27 @@
 // File     : top.v
 // Description: verilog coding on FPGA 
 //              sequential circuit from lab2 trafic signals
+//              GP1-3   input   NCLR, X, CLOCK
+//              GP4-6   output  red, yellow, green
 
 
-module top(input GP1, input GP2, , input GP3, output GP4, output GP5, output GP6);
+module top(input GP3, input GP4, input GP5, output GP6, output GP7, output GP8);
     // wire clock;
     // clock_100hz c(clock);
     traffic_light_fsm traffic_signal(
-         GP1    // reset(NCLR)
-        ,GP2    // x
-        ,GP3    // clock
-        ,GP4    // red
-        ,GP5    // yellow
-        ,GP6    // green
+         GP3    // reset(NCLR)
+        ,GP4    // x
+        ,GP5    // clock
+        ,GP6    // red
+        ,GP7    // yellow
+        ,GP8    // green
     );
 endmodule
 
 
 module traffic_light_fsm(input reset, input x, input clock,
             output reg r, output reg y, output reg g);
+
     
     parameter green = 0, tored = 1, red = 3, fred = 2;
     reg [1:0] state;
@@ -56,7 +59,7 @@ module traffic_light_fsm(input reset, input x, input clock,
         endcase
     end
     always @(posedge clock) begin   // posedge = rising edge    negedge = falling edge
-        if(reset) begin
+        if(!reset) begin
             state <= green;
         end else begin
             case(state)

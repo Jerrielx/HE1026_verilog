@@ -3,7 +3,7 @@
   "modules": {
     "$__ABC9_DELAY": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000000101",
+        "abc9_box_id": "00000000000000000000000000000100",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -23,7 +23,7 @@
         }
       },
       "cells": {
-        "$specify$955": {
+        "$specify$687": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -121,7 +121,7 @@
     },
     "$__DFF_N__$abc9_flop": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000000100",
+        "abc9_box_id": "00000000000000000000000000000011",
         "blackbox": "00000000000000000000000000000001",
         "abc9_flop": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
@@ -181,7 +181,7 @@
     },
     "$__DFF_P__$abc9_flop": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000000011",
+        "abc9_box_id": "00000000000000000000000000000010",
         "blackbox": "00000000000000000000000000000001",
         "abc9_flop": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
@@ -241,7 +241,7 @@
     },
     "$__ICE40_CARRY_WRAPPER": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000000111",
+        "abc9_box_id": "00000000000000000000000000000101",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -360,7 +360,7 @@
         }
       },
       "cells": {
-        "$specify$955": {
+        "$specify$687": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -405,177 +405,6 @@
           "bits": [ 3 ],
           "attributes": {
             "src": "/share/abc9_model.v:2.39-2.40"
-          }
-        }
-      }
-    },
-    "$paramod$__ABC9_DELAY\\DELAY=32'00000000000000000000000011001011": {
-      "attributes": {
-        "abc9_box_id": "00000000000000000000000000000010",
-        "hdlname": "__ABC9_DELAY",
-        "blackbox": "00000000000000000000000000000001",
-        "abc9_box": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
-        "src": "/share/abc9_model.v:2.1-7.10"
-      },
-      "parameter_default_values": {
-        "DELAY": "00000000000000000000000011001011"
-      },
-      "ports": {
-        "I": {
-          "direction": "input",
-          "bits": [ 2 ]
-        },
-        "O": {
-          "direction": "output",
-          "bits": [ 3 ]
-        }
-      },
-      "cells": {
-        "$specify$955": {
-          "hide_name": 1,
-          "type": "$specify2",
-          "parameters": {
-            "DST_WIDTH": "00000000000000000000000000000001",
-            "FULL": "0",
-            "SRC_DST_PEN": "0",
-            "SRC_DST_POL": "0",
-            "SRC_WIDTH": "00000000000000000000000000000001",
-            "T_FALL_MAX": "00000000000000000000000011001011",
-            "T_FALL_MIN": "00000000000000000000000011001011",
-            "T_FALL_TYP": "00000000000000000000000011001011",
-            "T_RISE_MAX": "00000000000000000000000011001011",
-            "T_RISE_MIN": "00000000000000000000000011001011",
-            "T_RISE_TYP": "00000000000000000000000011001011"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/abc9_model.v:5.5-5.22"
-          },
-          "port_directions": {
-            "DST": "input",
-            "EN": "input",
-            "SRC": "input"
-          },
-          "connections": {
-            "DST": [ 3 ],
-            "EN": [ "1" ],
-            "SRC": [ 2 ]
-          }
-        }
-      },
-      "netnames": {
-        "I": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "src": "/share/abc9_model.v:2.29-2.30"
-          }
-        },
-        "O": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "src": "/share/abc9_model.v:2.39-2.40"
-          }
-        }
-      }
-    },
-    "$paramod$__ICE40_CARRY_WRAPPER\\LUT=16'0110100110010110\\I3_IS_CI=1'1": {
-      "attributes": {
-        "abc9_box_id": "00000000000000000000000000000110",
-        "blackbox": "00000000000000000000000000000001",
-        "hdlname": "__ICE40_CARRY_WRAPPER",
-        "abc9_box": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
-        "src": "/share/ice40/abc9_model.v:2.1-86.10"
-      },
-      "parameter_default_values": {
-        "I3_IS_CI": "1",
-        "LUT": "0110100110010110"
-      },
-      "ports": {
-        "CO": {
-          "direction": "output",
-          "bits": [ 2 ]
-        },
-        "O": {
-          "direction": "output",
-          "bits": [ 3 ]
-        },
-        "A": {
-          "direction": "input",
-          "bits": [ 4 ]
-        },
-        "B": {
-          "direction": "input",
-          "bits": [ 5 ]
-        },
-        "CI": {
-          "direction": "input",
-          "bits": [ 6 ]
-        },
-        "I0": {
-          "direction": "input",
-          "bits": [ 7 ]
-        },
-        "I3": {
-          "direction": "input",
-          "bits": [ 8 ]
-        }
-      },
-      "cells": {
-      },
-      "netnames": {
-        "A": {
-          "hide_name": 0,
-          "bits": [ 4 ],
-          "attributes": {
-            "src": "/share/ice40/abc9_model.v:6.8-6.9"
-          }
-        },
-        "B": {
-          "hide_name": 0,
-          "bits": [ 5 ],
-          "attributes": {
-            "src": "/share/ice40/abc9_model.v:6.11-6.12"
-          }
-        },
-        "CI": {
-          "hide_name": 0,
-          "bits": [ 6 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "/share/ice40/abc9_model.v:8.8-8.10"
-          }
-        },
-        "CO": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "I0": {
-          "hide_name": 0,
-          "bits": [ 7 ],
-          "attributes": {
-            "src": "/share/ice40/abc9_model.v:9.8-9.10"
-          }
-        },
-        "I3": {
-          "hide_name": 0,
-          "bits": [ 8 ],
-          "attributes": {
-            "src": "/share/ice40/abc9_model.v:9.12-9.14"
-          }
-        },
-        "O": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "src": "/share/ice40/abc9_model.v:5.9-5.10"
           }
         }
       }
@@ -2777,6 +2606,7 @@
     "SB_CARRY": {
       "attributes": {
         "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/share/ice40/cells_sim.v:228.1-260.10"
       },
       "ports": {
@@ -2832,9 +2662,8 @@
     },
     "SB_DFF": {
       "attributes": {
-        "blackbox": "00000000000000000000000000000001",
         "abc9_flop": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
         "src": "/share/ice40/cells_sim.v:265.1-300.10"
       },
       "ports": {
@@ -2938,7 +2767,7 @@
     },
     "SB_DFFER": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000001000",
+        "abc9_box_id": "00000000000000000000000000000110",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -3009,7 +2838,7 @@
     },
     "SB_DFFES": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000001001",
+        "abc9_box_id": "00000000000000000000000000000111",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -3220,8 +3049,9 @@
     },
     "SB_DFFN": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/share/ice40/cells_sim.v:876.1-911.10"
       },
       "ports": {
@@ -3325,7 +3155,7 @@
     },
     "SB_DFFNER": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000001010",
+        "abc9_box_id": "00000000000000000000000000001000",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -3396,7 +3226,7 @@
     },
     "SB_DFFNES": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000001011",
+        "abc9_box_id": "00000000000000000000000000001001",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -3665,7 +3495,7 @@
     },
     "SB_DFFNS": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000001100",
+        "abc9_box_id": "00000000000000000000000000001010",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -3840,7 +3670,7 @@
     },
     "SB_DFFR": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000001101",
+        "abc9_box_id": "00000000000000000000000000001011",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -3899,7 +3729,7 @@
     },
     "SB_DFFS": {
       "attributes": {
-        "abc9_box_id": "00000000000000000000000000001110",
+        "abc9_box_id": "00000000000000000000000000001100",
         "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
         "cells_not_processed": "00000000000000000000000000000001",
@@ -3958,8 +3788,9 @@
     },
     "SB_DFFSR": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/share/ice40/cells_sim.v:350.1-397.10"
       },
       "ports": {
@@ -5546,6 +5377,7 @@
     "SB_LFOSC": {
       "attributes": {
         "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/share/ice40/cells_sim.v:2684.1-2689.10"
       },
       "ports": {
@@ -10207,7 +10039,7 @@
       "attributes": {
         "hdlname": "top",
         "top": "00000000000000000000000000000001",
-        "src": "verilog_project/top.v:10.1-21.10"
+        "src": "verilog_project/top.v:12.1-23.10"
       },
       "ports": {
         "GP3": {
@@ -10218,25 +10050,79 @@
           "direction": "input",
           "bits": [ 3 ]
         },
-        "GP7": {
-          "direction": "output",
+        "GP5": {
+          "direction": "input",
           "bits": [ 4 ]
         },
-        "GP8": {
+        "GP6": {
           "direction": "output",
           "bits": [ 5 ]
         },
-        "GP9": {
+        "GP7": {
           "direction": "output",
           "bits": [ 6 ]
+        },
+        "GP8": {
+          "direction": "output",
+          "bits": [ 7 ]
         }
       },
       "cells": {
-        "GP3_SB_LUT4_I1": {
+        "GP3_SB_LUT4_I2": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1111101111111010"
+            "LUT_INIT": "1111000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 2 ],
+            "I3": [ 8 ],
+            "O": [ 9 ]
+          }
+        },
+        "GP3_SB_LUT4_I2_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 2 ],
+            "I3": [ 10 ],
+            "O": [ 11 ]
+          }
+        },
+        "GP4_SB_LUT4_I0": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111011111110011"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -10252,16 +10138,16 @@
           "connections": {
             "I0": [ 3 ],
             "I1": [ 2 ],
-            "I2": [ 7 ],
-            "I3": [ 8 ],
-            "O": [ 9 ]
+            "I2": [ 12 ],
+            "I3": [ 13 ],
+            "O": [ 14 ]
           }
         },
-        "GP3_SB_LUT4_I2": {
+        "GP4_SB_LUT4_I1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0011000000000000"
+            "LUT_INIT": "1100000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -10278,58 +10164,33 @@
             "I0": [ "0" ],
             "I1": [ 3 ],
             "I2": [ 2 ],
-            "I3": [ 8 ],
-            "O": [ 10 ]
-          }
-        },
-        "GP4_SB_LUT4_I2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 3 ],
-            "I3": [ 11 ],
-            "O": [ 12 ]
-          }
-        },
-        "GP4_SB_LUT4_I2_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 3 ],
             "I3": [ 13 ],
-            "O": [ 14 ]
+            "O": [ 15 ]
+          }
+        },
+        "GP6_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111111111110000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 8 ],
+            "I3": [ 12 ],
+            "O": [ 5 ]
           }
         },
         "GP7_SB_LUT4_O": {
@@ -10352,20 +10213,20 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 13 ],
-            "I3": [ 7 ],
-            "O": [ 4 ]
+            "I2": [ 10 ],
+            "I3": [ 12 ],
+            "O": [ 6 ]
           }
         },
         "GP8_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1111111111110000"
+            "LUT_INIT": "0000000000000011"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:17.34-18.52"
+            "src": "/share/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10376,1245 +10237,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 11 ],
-            "I3": [ 7 ],
-            "O": [ 5 ]
-          }
-        },
-        "GP9_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000001111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 13 ],
-            "I3": [ 5 ],
-            "O": [ 6 ]
-          }
-        },
-        "c": {
-          "hide_name": 0,
-          "type": "$scopeinfo",
-          "parameters": {
-            "TYPE": "module"
-          },
-          "attributes": {
-            "cell_module_not_derived": "00000000000000000000000000000001",
-            "cell_src": "verilog_project/top.v:12.17-12.25",
-            "module": "clock_100hz",
-            "module_hdlname": "clock_100hz",
-            "module_src": "verilog_project/clock_100hz.v:1.1-29.10"
-          },
-          "port_directions": {
-          },
-          "connections": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 16 ],
-            "Q": [ 17 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 19 ],
-            "Q": [ 20 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_10": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 21 ],
-            "Q": [ 22 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_10_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 22 ],
-            "I3": [ 23 ],
-            "O": [ 21 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_10_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 24 ],
-            "CO": [ 23 ],
-            "I0": [ "0" ],
-            "I1": [ 25 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_11": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 26 ],
-            "Q": [ 25 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_11_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 25 ],
-            "I3": [ 24 ],
-            "O": [ 26 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_11_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 27 ],
-            "CO": [ 24 ],
-            "I0": [ "0" ],
-            "I1": [ 28 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_12": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 29 ],
-            "Q": [ 28 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_12_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 28 ],
-            "I3": [ 27 ],
-            "O": [ 29 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_12_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 30 ],
-            "CO": [ 27 ],
-            "I0": [ "0" ],
-            "I1": [ 31 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_13": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 32 ],
-            "Q": [ 31 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_13_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 31 ],
-            "I3": [ 30 ],
-            "O": [ 32 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_13_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 33 ],
-            "CO": [ 30 ],
-            "I0": [ "0" ],
-            "I1": [ 34 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_14": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 35 ],
-            "Q": [ 34 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_14_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 34 ],
-            "I3": [ 33 ],
-            "O": [ 35 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_15": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 36 ],
-            "Q": [ 33 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_15_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 33 ],
-            "O": [ 36 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_1_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 20 ],
-            "I3": [ 37 ],
-            "O": [ 19 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_1_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 38 ],
-            "CO": [ 37 ],
-            "I0": [ "0" ],
-            "I1": [ 39 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_2": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 40 ],
-            "Q": [ 39 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_2_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 39 ],
-            "I3": [ 38 ],
-            "O": [ 40 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_2_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 41 ],
-            "CO": [ 38 ],
-            "I0": [ "0" ],
-            "I1": [ 42 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_3": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 43 ],
-            "Q": [ 42 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_3_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 42 ],
-            "I3": [ 41 ],
-            "O": [ 43 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_3_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 44 ],
-            "CO": [ 41 ],
-            "I0": [ "0" ],
-            "I1": [ 45 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_4": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 46 ],
-            "Q": [ 45 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_4_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 45 ],
-            "I3": [ 44 ],
-            "O": [ 46 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_4_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 47 ],
-            "CO": [ 44 ],
-            "I0": [ "0" ],
-            "I1": [ 48 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_5": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 49 ],
-            "Q": [ 48 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_5_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 48 ],
-            "I3": [ 47 ],
-            "O": [ 49 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_5_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 50 ],
-            "CO": [ 47 ],
-            "I0": [ "0" ],
-            "I1": [ 51 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_6": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 52 ],
-            "Q": [ 51 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_6_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 51 ],
-            "I3": [ 50 ],
-            "O": [ 52 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_6_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 53 ],
-            "CO": [ 50 ],
-            "I0": [ "0" ],
-            "I1": [ 54 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_7": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 55 ],
-            "Q": [ 54 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_7_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 54 ],
-            "I3": [ 53 ],
-            "O": [ 55 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_7_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 56 ],
-            "CO": [ 53 ],
-            "I0": [ "0" ],
-            "I1": [ 57 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_8": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 58 ],
-            "Q": [ 57 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_8_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 57 ],
-            "I3": [ 56 ],
-            "O": [ 58 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_8_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 59 ],
-            "CO": [ 56 ],
-            "I0": [ "0" ],
-            "I1": [ 60 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_9": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:24.5-27.8|/share/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 15 ],
-            "D": [ 61 ],
-            "Q": [ 60 ],
-            "R": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_9_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 60 ],
-            "I3": [ 59 ],
-            "O": [ 61 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_9_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 23 ],
-            "CO": [ 59 ],
-            "I0": [ "0" ],
-            "I1": [ 22 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 17 ],
-            "I3": [ 62 ],
-            "O": [ 16 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 37 ],
-            "CO": [ 62 ],
-            "I0": [ "0" ],
-            "I1": [ 20 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_R_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 63 ],
-            "I1": [ 64 ],
-            "I2": [ 65 ],
-            "I3": [ 66 ],
-            "O": [ 18 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_R_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000001000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 57 ],
-            "I1": [ 60 ],
-            "I2": [ 22 ],
-            "I3": [ 25 ],
-            "O": [ 66 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_R_SB_LUT4_O_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 45 ],
-            "I1": [ 48 ],
-            "I2": [ 51 ],
-            "I3": [ 54 ],
-            "O": [ 63 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_R_SB_LUT4_O_I0_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 17 ],
-            "I1": [ 20 ],
-            "I2": [ 39 ],
-            "I3": [ 42 ],
-            "O": [ 64 ]
-          }
-        },
-        "c.counter_SB_DFFSR_Q_R_SB_LUT4_O_I0_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 28 ],
-            "I1": [ 31 ],
-            "I2": [ 34 ],
-            "I3": [ 33 ],
-            "O": [ 65 ]
-          }
-        },
-        "c.inthosc": {
-          "hide_name": 0,
-          "type": "SB_LFOSC",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "c inthosc",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:10.14-14.6"
-          },
-          "port_directions": {
-            "CLKLF": "output",
-            "CLKLFEN": "input",
-            "CLKLFPU": "input"
-          },
-          "connections": {
-            "CLKLF": [ 15 ],
-            "CLKLFEN": [ "1" ],
-            "CLKLFPU": [ "1" ]
+            "I1": [ 8 ],
+            "I2": [ 10 ],
+            "I3": [ 12 ],
+            "O": [ 7 ]
           }
         },
         "traffic_signal": {
@@ -11625,24 +10251,24 @@
           },
           "attributes": {
             "cell_module_not_derived": "00000000000000000000000000000001",
-            "cell_src": "verilog_project/top.v:13.23-20.6",
+            "cell_src": "verilog_project/top.v:15.23-22.6",
             "module": "traffic_light_fsm",
             "module_hdlname": "traffic_light_fsm",
-            "module_src": "verilog_project/top.v:24.1-76.10"
+            "module_src": "verilog_project/top.v:26.1-79.10"
           },
           "port_directions": {
           },
           "connections": {
           }
         },
-        "traffic_signal.state_SB_DFFN_Q": {
+        "traffic_signal.state_SB_DFF_Q": {
           "hide_name": 0,
-          "type": "SB_DFFN",
+          "type": "SB_DFF",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/ff_map.v:1.51-1.90"
+            "src": "/share/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
             "C": "input",
@@ -11650,363 +10276,69 @@
             "Q": "output"
           },
           "connections": {
-            "C": [ 67 ],
-            "D": [ 12 ],
-            "Q": [ 13 ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFN",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/ff_map.v:1.51-1.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 67 ],
-            "D": [ 10 ],
-            "Q": [ 11 ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_2": {
-          "hide_name": 0,
-          "type": "SB_DFFN",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/ff_map.v:1.51-1.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 67 ],
-            "D": [ 14 ],
-            "Q": [ 7 ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_3": {
-          "hide_name": 0,
-          "type": "SB_DFFN",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/share/ice40/ff_map.v:1.51-1.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 67 ],
-            "D": [ 9 ],
+            "C": [ 4 ],
+            "D": [ 11 ],
             "Q": [ 8 ]
           }
         },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO": {
+        "traffic_signal.state_SB_DFF_Q_1": {
           "hide_name": 0,
-          "type": "SB_CARRY",
+          "type": "SB_DFF",
           "parameters": {
           },
           "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
+            "C": "input",
+            "D": "input",
+            "Q": "output"
           },
           "connections": {
-            "CI": [ 68 ],
-            "CO": [ 67 ],
-            "I0": [ 17 ],
-            "I1": [ "1" ]
+            "C": [ 4 ],
+            "D": [ 15 ],
+            "Q": [ 10 ]
           }
         },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO": {
+        "traffic_signal.state_SB_DFF_Q_2": {
           "hide_name": 0,
-          "type": "SB_CARRY",
+          "type": "SB_DFF",
           "parameters": {
           },
           "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
+            "C": "input",
+            "D": "input",
+            "Q": "output"
           },
           "connections": {
-            "CI": [ 69 ],
-            "CO": [ 68 ],
-            "I0": [ 20 ],
-            "I1": [ "1" ]
+            "C": [ 4 ],
+            "D": [ 9 ],
+            "Q": [ 12 ]
           }
         },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
+        "traffic_signal.state_SB_DFF_Q_3": {
           "hide_name": 0,
-          "type": "SB_CARRY",
+          "type": "SB_DFF",
           "parameters": {
           },
           "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/share/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
+            "C": "input",
+            "D": "input",
+            "Q": "output"
           },
           "connections": {
-            "CI": [ 70 ],
-            "CO": [ 69 ],
-            "I0": [ 39 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 71 ],
-            "CO": [ 70 ],
-            "I0": [ 42 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 72 ],
-            "CO": [ 71 ],
-            "I0": [ 45 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 73 ],
-            "CO": [ 72 ],
-            "I0": [ 48 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 74 ],
-            "CO": [ 73 ],
-            "I0": [ 51 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 75 ],
-            "CO": [ 74 ],
-            "I0": [ 54 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 76 ],
-            "CO": [ 75 ],
-            "I0": [ 57 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 77 ],
-            "CO": [ 76 ],
-            "I0": [ 60 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 78 ],
-            "CO": [ 77 ],
-            "I0": [ 22 ],
-            "I1": [ "0" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 79 ],
-            "CO": [ 78 ],
-            "I0": [ 25 ],
-            "I1": [ "0" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 80 ],
-            "CO": [ 79 ],
-            "I0": [ 28 ],
-            "I1": [ "1" ]
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 34 ],
-            "CO": [ 80 ],
-            "I0": [ 31 ],
-            "I1": [ "1" ]
+            "C": [ 4 ],
+            "D": [ 14 ],
+            "Q": [ 13 ]
           }
         }
       },
@@ -12015,457 +10347,121 @@
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "verilog_project/top.v:10.18-10.21"
+            "src": "verilog_project/top.v:12.18-12.21"
           }
         },
         "GP4": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "verilog_project/top.v:10.29-10.32"
+            "src": "verilog_project/top.v:12.29-12.32"
+          }
+        },
+        "GP5": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "verilog_project/top.v:12.40-12.43"
+          }
+        },
+        "GP6": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "verilog_project/top.v:12.52-12.55"
           }
         },
         "GP7": {
           "hide_name": 0,
-          "bits": [ 4 ],
+          "bits": [ 6 ],
           "attributes": {
-            "src": "verilog_project/top.v:10.41-10.44"
+            "src": "verilog_project/top.v:12.64-12.67"
           }
         },
         "GP8": {
           "hide_name": 0,
-          "bits": [ 5 ],
+          "bits": [ 7 ],
           "attributes": {
-            "src": "verilog_project/top.v:10.53-10.56"
+            "src": "verilog_project/top.v:12.76-12.79"
           }
         },
-        "GP9": {
+        "traffic_signal.clock": {
           "hide_name": 0,
-          "bits": [ 6 ],
+          "bits": [ 4 ],
           "attributes": {
-            "src": "verilog_project/top.v:10.65-10.68"
-          }
-        },
-        "c.baseclock": {
-          "hide_name": 0,
-          "bits": [ 15 ],
-          "attributes": {
-            "hdlname": "c baseclock",
-            "src": "verilog_project/clock_100hz.v:3.10-3.19"
-          }
-        },
-        "c.counter": {
-          "hide_name": 0,
-          "bits": [ 33, 34, 31, 28, 25, 22, 60, 57, 54, 51, 48, 45, 42, 39, 20, 17 ],
-          "attributes": {
-            "hdlname": "c counter",
-            "src": "verilog_project/clock_100hz.v:4.16-4.23"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_10_D": {
-          "hide_name": 0,
-          "bits": [ 21 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_10_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 23 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_11_D": {
-          "hide_name": 0,
-          "bits": [ 26 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_11_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 24 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_12_D": {
-          "hide_name": 0,
-          "bits": [ 29 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_12_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 27 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_13_D": {
-          "hide_name": 0,
-          "bits": [ 32 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_13_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 30 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_14_D": {
-          "hide_name": 0,
-          "bits": [ 35 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_15_D": {
-          "hide_name": 0,
-          "bits": [ 36 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_1_D": {
-          "hide_name": 0,
-          "bits": [ 19 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_1_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 37 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_2_D": {
-          "hide_name": 0,
-          "bits": [ 40 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_2_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 38 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_3_D": {
-          "hide_name": 0,
-          "bits": [ 43 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_3_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 41 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_4_D": {
-          "hide_name": 0,
-          "bits": [ 46 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_4_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 44 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_5_D": {
-          "hide_name": 0,
-          "bits": [ 49 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_5_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 47 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_6_D": {
-          "hide_name": 0,
-          "bits": [ 52 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_6_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 50 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_7_D": {
-          "hide_name": 0,
-          "bits": [ 55 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_7_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 53 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_8_D": {
-          "hide_name": 0,
-          "bits": [ 58 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_8_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 56 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_9_D": {
-          "hide_name": 0,
-          "bits": [ 61 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_9_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 59 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_D": {
-          "hide_name": 0,
-          "bits": [ 16 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 62 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:26.25-26.36|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "c.counter_SB_DFFSR_Q_R": {
-          "hide_name": 0,
-          "bits": [ 18 ],
-          "attributes": {
-          }
-        },
-        "c.counter_SB_DFFSR_Q_R_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 63, 64, 65, 66 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/share/ice40/cells_map.v:6.21-6.22"
+            "hdlname": "traffic_signal clock",
+            "src": "verilog_project/top.v:26.54-26.59"
           }
         },
         "traffic_signal.g": {
           "hide_name": 0,
-          "bits": [ 6 ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "traffic_signal g",
-            "src": "verilog_project/top.v:25.52-25.53"
+            "src": "verilog_project/top.v:27.52-27.53"
           }
         },
         "traffic_signal.r": {
           "hide_name": 0,
-          "bits": [ 4 ],
+          "bits": [ 5 ],
           "attributes": {
             "hdlname": "traffic_signal r",
-            "src": "verilog_project/top.v:25.24-25.25"
+            "src": "verilog_project/top.v:27.24-27.25"
           }
         },
         "traffic_signal.reset": {
           "hide_name": 0,
-          "bits": [ 3 ],
+          "bits": [ 2 ],
           "attributes": {
             "hdlname": "traffic_signal reset",
-            "src": "verilog_project/top.v:24.54-24.59"
+            "src": "verilog_project/top.v:26.32-26.37"
           }
         },
         "traffic_signal.state": {
           "hide_name": 0,
-          "bits": [ 8, 7, 11, 13 ],
+          "bits": [ 13, 12, 10, 8 ],
           "attributes": {
             "onehot": "00000000000000000000000000000001"
           }
         },
-        "traffic_signal.state_SB_DFFN_Q_1_D": {
+        "traffic_signal.state_SB_DFF_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 10 ],
+          "bits": [ 15 ],
           "attributes": {
           }
         },
-        "traffic_signal.state_SB_DFFN_Q_2_D": {
-          "hide_name": 0,
-          "bits": [ 14 ],
-          "attributes": {
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_3_D": {
+        "traffic_signal.state_SB_DFF_Q_2_D": {
           "hide_name": 0,
           "bits": [ 9 ],
           "attributes": {
           }
         },
-        "traffic_signal.state_SB_DFFN_Q_C": {
+        "traffic_signal.state_SB_DFF_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 34, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 67 ],
+          "bits": [ 14 ],
           "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:37.23-37.25",
-            "unused_bits": "1 2 3 4 5 6 7 8 9 10 11 12 13"
           }
         },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI": {
+        "traffic_signal.state_SB_DFF_Q_D": {
           "hide_name": 0,
-          "bits": [ 68 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 69 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 70 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 71 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 72 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 73 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 74 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 75 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 76 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 77 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 78 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 79 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_C_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ 80 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "verilog_project/clock_100hz.v:21.26-21.49|/share/ice40/arith_map.v:62.5-70.4|/share/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "traffic_signal.state_SB_DFFN_Q_D": {
-          "hide_name": 0,
-          "bits": [ 12 ],
+          "bits": [ 11 ],
           "attributes": {
           }
         },
         "traffic_signal.x": {
           "hide_name": 0,
-          "bits": [ 2 ],
+          "bits": [ 3 ],
           "attributes": {
             "hdlname": "traffic_signal x",
-            "src": "verilog_project/top.v:24.32-24.33"
+            "src": "verilog_project/top.v:26.45-26.46"
           }
         },
         "traffic_signal.y": {
           "hide_name": 0,
-          "bits": [ 5 ],
+          "bits": [ 6 ],
           "attributes": {
             "hdlname": "traffic_signal y",
-            "src": "verilog_project/top.v:25.38-25.39"
+            "src": "verilog_project/top.v:27.38-27.39"
           }
         }
       }
