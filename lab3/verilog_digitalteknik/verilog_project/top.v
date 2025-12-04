@@ -1,12 +1,12 @@
 // Program  : TIDAA
 // Course   : HE1026 Digital teknik
 // Author   : Jerry Cheung
-// Date     : 2025-11-29
+// Date     : 2025-12-03
 // File     : top.v
 // Description: verilog coding on FPGA 
 //              sequential circuit from lab2 trafic signals
-//              GP1-3   input   NCLR, X, CLOCK
-//              GP4-6   output  red, yellow, green
+//              GP3-5   input   NCLR, X, CLOCK
+//              GP6-8   output  red, yellow, green
 
 
 module top(input GP3, input GP4, input GP5, output GP6, output GP7, output GP8);
