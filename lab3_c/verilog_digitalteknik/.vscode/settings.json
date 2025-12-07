@@ -1,0 +1,7 @@
+{
+    "yowaspToolchain.buildCommands": [
+        ["yosys", "verilog_project/*.v", "-p", "synth_ice40", "-o", "build/top.json"],
+        ["nextpnr-ice40", "--u4k", "--package", "sg48", "--json", "build/top.json", "--pcf", "verilog_project/io.pcf", "--asc", "build/top.asc"],
+        ["icepack", "build/top.asc", "bitstream/bitstream.bin"]
+    ]
+}
